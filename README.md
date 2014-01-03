@@ -1,8 +1,8 @@
-* basis
+# basis
 
 Basis data, analysis, and visualization.
 
-** Getting your data
+## Getting your data
 
 1. Find your data url by opening up the [data activity tab](https://app.mybasis.com/#me/data/activity/2013-12-31) on your Basis control panel.
 
@@ -20,7 +20,7 @@ It's unique to each user and is the only means of authentication (oh noes! you c
 
   $ python scripts/load_data.py
 
-** Visualizing your data
+## Visualizing your data
 
 Lots of work left to do here, but you can look at `scripts/sleep.r` for how I'm plotting sleep:
 
