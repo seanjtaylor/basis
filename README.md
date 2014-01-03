@@ -13,7 +13,7 @@ It's unique to each user and is the only means of authentication (oh noes! you c
 2. Now run a quick bash script to download all the json:
 
   $ for i in $(seq -w 1 30)};
-     do wget "https://app.mybasis.com/api/v1/chart/<YOUR CODE HERE>.json?summary=true&interval=60&units=ms&start_date=2013-12-$i&heartrate=true&steps=true&calories=true&gsr=true&skin_temp=true&bodystates=true" -O 2013-11-$i.json; 
+     do wget "https://app.mybasis.com/api/v1/chart/YOUR_CODE_HERE.json?summary=true&interval=60&units=ms&start_date=2013-12-$i&heartrate=true&steps=true&calories=true&gsr=true&skin_temp=true&bodystates=true" -O 2013-11-$i.json; 
      done
 
 3. Now you've got all your data.  Run the load_data.py script to make csv files (ehh this one could use some love).
