@@ -18,3 +18,4 @@ Sleep$end.time <- with_tz(as.time(Sleep$end), 'America/Los_Angeles')
 
 p <- ggplot(Sleep, aes(xmin = date, xmax = date + hours(20), ymin = start.time, ymax = end.time))
 p <- p + geom_rect() + scale_y_datetime(labels = date_format("%H:%M")) + xlab('Date') + ylab('Time')
+ggsave(p, 'figures/sleep-plot.png', width = 6, height = 3)
