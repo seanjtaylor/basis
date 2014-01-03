@@ -39,5 +39,5 @@ def load_data(data_dir='data/raw'):
 
 if __name__ == '__main__':
     df, states = load_data()
-    df.to_csv('data/clean/metrics_10011210.csv')
-    states.to_csv('data/clean/states_10011210.csv')
+    df.to_csv('data/clean/metrics_10011230.csv')
+    states.to_csv('data/clean/states_10011230.csv')
